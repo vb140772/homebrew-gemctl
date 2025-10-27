@@ -5,21 +5,21 @@
 class Gemctl < Formula
   desc "CLI tool for Gemini Enterprise management"
   homepage "https://github.com/vb140772/gemctl-go"
-  version "1.3.3"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vb140772/gemctl-go/releases/download/v1.3.3/gemctl_1.3.3_darwin_amd64.tar.gz"
-      sha256 "5df0fca6950b87d378bf5be0d6e658326c89e64cacb6885b296f84596757266d"
+      url "https://github.com/vb140772/gemctl-go/releases/download/v1.4.0/gemctl_1.4.0_darwin_amd64.tar.gz"
+      sha256 "f3549d7fcbf7eaabf2d85fe0bbc0e2560c8b87818e90deb462c3a53df8d7cef6"
 
       def install
         bin.install "gemctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vb140772/gemctl-go/releases/download/v1.3.3/gemctl_1.3.3_darwin_arm64.tar.gz"
-      sha256 "2db185751cbbb7b019971e559ba4dd13e0600311e67e217d5b531defc2b4bb1e"
+      url "https://github.com/vb140772/gemctl-go/releases/download/v1.4.0/gemctl_1.4.0_darwin_arm64.tar.gz"
+      sha256 "8a776d371f3cb7117a1a5a2fcafa53a616906fc2e3ac7ece8cc6f2f77f0fd275"
 
       def install
         bin.install "gemctl"
@@ -29,15 +29,15 @@ class Gemctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vb140772/gemctl-go/releases/download/v1.3.3/gemctl_1.3.3_linux_amd64.tar.gz"
-      sha256 "638de19e3371f85573b1ecb6103cf6c39a47fbd7f0d7ebd750e97eec078ee88a"
+      url "https://github.com/vb140772/gemctl-go/releases/download/v1.4.0/gemctl_1.4.0_linux_amd64.tar.gz"
+      sha256 "e7e7760977676490446e86c6a75acecd41d4c55367b80e1417267d96aa0cd983"
       def install
         bin.install "gemctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vb140772/gemctl-go/releases/download/v1.3.3/gemctl_1.3.3_linux_arm64.tar.gz"
-      sha256 "cfc2f0310e93eb36e4ffd72d163abbbdb762d0bb0ab72e85be0b9f776f04183d"
+      url "https://github.com/vb140772/gemctl-go/releases/download/v1.4.0/gemctl_1.4.0_linux_arm64.tar.gz"
+      sha256 "9fb476a74331e4c8309158b3c98ac82c4c6ac27ab8c59f2f8473717e8539f2d3"
       def install
         bin.install "gemctl"
       end
